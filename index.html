@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OS BIOMAS DO MUNDO</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        #scroll-container {
+            text-align: center; /* Centraliza as imagens horizontalmente */
+    }
+
+        #scroll-container img {
+            width: 500px; /* Largura das imagens, ajuste conforme necessário */
+            height: 350px;
+            display: inline-block;
+            margin: 0 10px; /* Espaçamento entre as imagens, ajuste conforme necessário */
+            border: 2px solid black; /* Adiciona uma borda fina preta */
+            border-radius: 10px; /* Raio do canto arredondado, ajuste conforme necessário */
+            overflow: hidden; /* Para garantir que a imagem não ultrapasse o canto arredondado */
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+
+        .container-slider {
+            display: flex;
+            width: 100%;
+            min-height: 40vh;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+    }
+
+        .container-images {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+    }
+
+        .slider {
+            opacity: 0;
+            transition: opacity .2s;
+            position: absolute;
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid black;
+    }
+
+        .on {
+            opacity: 1;
+    }
+
+        #prev-button, #next-button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+    }
+
+        #prev-button img, #next-button img {
+            width: 100%;
+            height: 100%;
+    }
+
+        #prev-button {
+            transform: rotate(180deg);
+    }
+    .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .espacado {
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+
+        .imgc {
+            width: 100%;
+            height: 184.23px;
+        }
+
+        img {
+            width: 540px;
+            border: solid;
+        }
+
+        .imgarrow {
+            border: none
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">Hidrografia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   
+                    <li class="nav-item"><a class="nav-link" href="https://luanagrazi.github.io/P-GINA_esfera_luh/p%C3%A1ginainicial/index.html">Página inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://luanagrazi.github.io/ques_rele_luh/p%C3%A1ginaquest%C3%B5es/quest%C3%B5es1/quest%C3%B5es1_Copia.html">Página das questões</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://static.todamateria.com.br/upload/di/st/distribuicaodosbiomas.jpg" alt="..." /></div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Hidrografia</h1>
+                <p>A hidrografia é a disciplina da Geografia que estuda os corpos d'água do planeta, incluindo rios, mares, lagos e águas subterrâneas. Seu objetivo principal é mapear e compreender a distribuição e funcionamento desses sistemas hídricos, com ênfase nas bacias hidrográficas. Além disso, a hidrografia analisa como a água interage com o ambiente e sua importância para a sociedade.</p>
+                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=kaHwgUCIKFI">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body"><p class="text-white m-0">NÃO SEI O QUE COLOCAR</p></div>
+        </div>
+        <h3 id="tundra">O que é Hidrografia?</h3>
+            <p>⠀A hidrografia é uma disciplina da Geografia física que se dedica ao mapeamento e estudo abrangente dos corpos hídricos que compõem o planeta Terra. Ela engloba uma variedade de formas de água, tanto superficiais (como rios, mares e lagos) quanto subterrâneas (aquíferos), e até mesmo as presentes na atmosfera. Essa área do conhecimento desempenha um papel fundamental na compreensão da distribuição e no funcionamento dos sistemas hídricos em diferentes escalas territoriais, sendo as bacias hidrográficas sua principal unidade de análise. <br/>
+               ⠀A hidrografia não se limita apenas à simples cartografia dos corpos d'água, mas busca também analisar como a água interage com o meio ambiente, como ocorre seu ciclo de renovação e como ela pode ser utilizada de forma sustentável pela sociedade humana. É um campo de estudo abrangente e essencial para a gestão dos recursos hídricos e a compreensão das interações entre a água e o ambiente terrestre. Portanto, sua relevância transcende os aspectos puramente geográficos, influenciando também aspectos econômicos, ambientais e sociais.
+            </p>
+        <br/>
+        <h3>Curiosidades</h3>
+        <hr> 
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Tratado de Cooperação Amazônica</h2>
+                        <img src="img/otca.png" class="imgc">
+                        <p class="card-text">Em 1978, os oito países que fazem parte da bacia do rio Amazonas assinaram o Tratado de Cooperação Amazônica. Um dos objetivos é promover o desenvolvimento integrado e sustentável da bacia.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm"
+                            href="https://www.gov.br/mre/pt-br/assuntos/mecanismos-internacionais/mecanismos-de-integracao-regional/organizacao-do-tratado-de-cooperacao-amazonica-otca">Saiba Mais
+                            </a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Pais com maior reserva de água doce</h2>
+                        <img src="img/brasil.png" class="imgc">
+                        <p class="card-text">O Brasil tem a maior reserva de água doce do planeta - cerca de 13% de todas as fontes existentes no mundo. A maior parte desse bem preciso está nos rios da Amazônia </p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm"
+                            href="https://guiadoestudante.abril.com.br/estudo/fatos-sobre-a-hidrografia-brasileira/">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">A distribuição de água no mundo</h2>
+                        <img src="img/agua.png" class="imgc">
+                        <p class="card-text">Os oceanos contêm cerca de 97% de toda a água da Terra, sendo que a maior parte dessa água é salgada. Apenas cerca de 3% da água do planeta é doce.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm"
+                            href="https://mundoeducacao.uol.com.br/geografia/a-distribuicao-agua-no-mundo.htm">Saiba Mais</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body">
+            <h1>Principais elementos da Hidrografia</h1>
+        </div>
+    </div>
+    <div class="container px-4 px-lg-5">
+        <h3><b>Ciclo da água</b></h3>
+        <p>⠀Quando a água vai de um estado físico para outro na natureza está passando pelo processo chamado de ciclo da água. O ciclo da água, também conhecido como ciclo hidrológico, é um processo fundamental que descreve o movimento contínuo e cíclico da água entre a atmosfera, a superfície terrestre e os corpos d'água.<br/> 
+           ⠀Esse ciclo é essencial para a manutenção da vida na Terra e para a regulação dos recursos hídricos. <i>Ele pode ser dividido em várias etapas interligadas, que são:</i> 
+        <h4>Evaporação</h4>
+            <ul>
+                <li>A radiação solar aquece a água em rios, lagos, mares e oceanos, fazendo com que ela se transforme em vapor.</li>
+                <li>O vapor de água sobe para a atmosfera, tornando-se parte da umidade do ar.</li>
+            </ul>
+        <h4>Condensação:</h4>
+            <ul>
+                <li>À medida que o vapor de água sobe na atmosfera, ele encontra regiões mais frias e, consequentemente, se resfria.</li>
+                <li>O resfriamento causa a condensação do vapor de água em pequenas gotículas de água.</li>
+                <li>Essas gotículas se agrupam para formar nuvens.</li>
+            </ul>
+        <h4>Precipitação:</h4>
+            <ul>
+                <li>Quando as gotículas de água nas nuvens se tornam grandes o suficiente, elas caem de volta para a superfície terrestre na forma de chuva, neve ou granizo.</li>
+                <li>A precipitação é uma das formas como a água retorna à Terra.</li>
+            </ul>
+        <h4>Infiltração</h4>
+            <ul>
+                <li>Parte da água da precipitação penetra no solo, infiltrando-se através das camadas do solo e das rochas.</li>
+                <li>Essa água pode ser armazenada nas camadas subterrâneas, alimentando aquíferos e lençóis freáticos, ou fluir para os cursos de água subterrâneos.</li>
+                <li>A água que não é absorvida pelo solo ou que excede a capacidade de infiltração flui sobre a superfície da terra.</li>
+            </ul>
+        <div class="destaque">
+            <p>⠀Parte da água que retorna à superfície não infiltra nos solos e rochas. Essa porção escoa pela superfície e abastece diretamente cursos de água, como rios e lagos. O escoamento é fundamental para manter o regime dos rios que abastecem as cidades e a zona rural.</p>
+        </div>
+        <h4>Transpiração:</h4>
+            <ul>
+                <li>As plantas absorvem água do solo através de suas raízes.</li>
+                <li>Essa água é transportada até as folhas das plantas, onde é liberada para a atmosfera na forma de vapor, em um processo chamado transpiração.</li>
+                <li>A transpiração das plantas contribui para a umidade atmosférica.</li>
+            </ul>
+            ⠀O <b>ciclo da água</b> é um processo contínuo e interconectado que desempenha um papel fundamental na regulação do clima, na distribuição de água doce e na manutenção dos ecossistemas terrestres e aquáticos. Ele também é crucial para o abastecimento de água potável, a agricultura, a produção de energia hidrelétrica e muitos outros aspectos da vida humana e natural.
+        </p>
+        <div id="scroll-container">
+            <img src="img/ciclo.gif" alt="Imagem 1">
+        </div>
+        <br/>
+        <h3><b>Bacia hidrográfica</b></h3>
+        <p>⠀Uma bacia hidrográfica, também conhecida como bacia de drenagem, é uma unidade geográfica que desempenha um papel fundamental na captação e gestão das águas pluviais que fluem através da chamada "rede de drenagem" ou rede hidrográfica. Essa rede é composta por cursos d'água, como córregos, riachos, rios e ribeirões. Dois elementos principais contribuem para a delimitação e formação das bacias hidrográficas: o relevo e a hidrografia.
+           ⠀Essas bacias são definidas por divisores de águas, que são áreas de elevação no terreno que atuam como limites naturais entre diferentes bacias. Toda a água que entra nesse sistema, principalmente por meio das chuvas, é direcionada para um único canal, que corresponde ao rio principal da bacia.</p>            
+        <br/>
+        <h3>Principais bacias hidrográficas do mundo</h3>
+        <p>Dentre as inúmeras bacias hidrográficas presentes na Terra, algumas se destacam tanto por suas vastas extensões territoriais quanto pela significativa importância socioeconômica que seus rios proporcionam. <i>A seguir, apresentamos as cinco maiores bacias hidrográficas do mundo:</i></p>
+        <ul>
+            <li><b>Bacia Amazônica:</b>
+                A Bacia Amazônica, situada na América do Sul, abrange uma extensão de cerca de 7 milhões de quilômetros quadrados, abrangendo seis nações e um território ultramarino europeu, a Guiana Francesa, com a maior porção localizada no Brasil. O Rio Amazonas é o principal curso d'água que percorre a Bacia Amazônica, sendo reconhecido como o rio mais extenso e volumoso do mundo, com uma extensão de 6.992 quilômetros.</li>
+            <br/><li><b>Bacia do Congo:</b>
+                A Bacia do Congo, possui uma área aproximada de 4 milhões de quilômetros quadrados, abrangendo a região da África Central. A bacia do Congo engloba um total de dez nações africanas, incluindo Congo, República Democrática do Congo, Gabão e Angola. Seu rio principal é o rio Congo, que é o segundo maior da África em extensão, com cerca de 4.700 quilômetros.</li>
+            <br/><li><b>Bacia do Nilo:</b>
+                A Bacia do Nilo, também situada no continente africano, abrange uma área de 3.400.000 quilômetros quadrados e se estende pelas regiões da África Setentrional e África Oriental. Ela engloba diversos países, incluindo Egito, Chade, Etiópia, Uganda e Burundi, totalizando 13 territórios. O rio principal que percorre essa bacia é o rio Nilo, o segundo mais longo do mundo, com uma extensão de 6.650 quilômetros.</li>
+            <br/><li><b>Bacia do Mississippi:</b>
+                A Bacia do Mississippi, Situada na América do Norte, a maior bacia hidrográfica dos Estados Unidos abrange uma área de aproximadamente 3.000.000 de quilômetros quadrados. Seu rio principal é o rio Mississippi, o segundo mais extenso a cortar o território norte-americano, com uma extensão de 3.766 quilômetros, percorrendo o país de norte a sul, desde o estado de Minnesota até a Louisiana.</li>
+            <br/><li><b>Bacia Platina:</b>
+                A Bacia Platina, situada na região sul da América do Sul, possui uma área aproximada de 3.000.000 de quilômetros quadrados e abrange os territórios do Brasil, Argentina, Bolívia, Uruguai e Paraguai. Seu principal curso d'água é o rio Paraná, com uma extensão de 4.500 quilômetros. Além disso, essa bacia é composta por outros importantes rios sul-americanos, incluindo o rio Paraguai e o rio Uruguai.</li>
+        </ul>
+    </div>   
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body">
+                <h1>Hidrografia do Mundo</h1>
+            </div>
+        </div>
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body">
+                <h1>Hidrografia do Brasil</h1>
+            </div>
+        </div>
+        <div class="container-slider">
+            <button id="prev-button"><img src="img/arrow.png" alt="prev-button"></button>
+            <div class="container-images">
+                <img src="img/6.png" alt="" class="slider on">
+                <img src="img/5.png" alt="" class="slider">
+                <img src="img/2.png" alt="" class="slider on">
+                <img src="img/4.png" alt="" class="slider">
+                <img src="img/3.png" alt="" class="slider on">
+                <img src="img/1.png" alt="" class="slider">
+            </div>
+            <button id="next-button"><img src="img/arrow.png" alt="next-button"></button>
+        </div>
+    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Instituto Federal do Rio Grande do Norte</p></div>
+    </footer>
+    <script>
+        const slider = document.querySelectorAll('.slider');
+        const btnPrev = document.getElementById('prev-button');
+        const btnNext = document.getElementById('next-button');
+
+        let currentSlide = 0;
+
+        function hideSlider() {
+            slider.forEach(item => item.classList.remove('on'))
+        }
+
+        function showSlider() {
+            slider[currentSlide].classList.add('on')
+        }
+
+        function nextSlider() {
+        hideSlider()
+        if(currentSlide === slider.length -1) {
+            currentSlide = 0
+        } else {
+            currentSlide++
+        }
+        showSlider()
+        }
+
+        function prevSlider() {
+        hideSlider()
+        if(currentSlide === 0) {
+            currentSlide = slider.length -1
+        } else {
+            currentSlide--
+        }
+        showSlider()
+        }
+
+        btnNext.addEventListener('click', nextSlider)
+        btnPrev.addEventListener('click', prevSlider)
+    </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/script.js"></script>
+</body>
+</html>
